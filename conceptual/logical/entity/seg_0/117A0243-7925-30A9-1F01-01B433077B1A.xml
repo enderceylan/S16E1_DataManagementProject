@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="117A0243-7925-30A9-1F01-01B433077B1A" name="Previous-Project">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:29:15 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>9C320B17-BD01-F017-1A52-EB15D5890BE5</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="end-date-month" id="61480526-D6F0-A3CA-1BCC-4998568F1A5B">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:29:30 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end-date-day" id="F7FB849B-5788-7C18-63D2-F99CBE7AB9B8">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:29:51 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end-date-year" id="3BC4C03B-8538-8A61-D541-2D8CD4BC231E">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:30:17 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="est-person-hours" id="7AFDB6BC-819E-B75F-61F1-9F754921C884">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:30:37 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

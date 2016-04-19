@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="employee/manager" directorySegmentName="seg_0" id="BC762893-36A6-1BDD-7556-C7B92A185C39">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:38:21 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<sourcePk>D326A2D4-5B5B-26DB-465B-3CF5C9DA85BE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A4511D23-6438-2A22-4068-44A43CE282D6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>61FF4958-F950-E1D3-DB9D-D2BA50C245EE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

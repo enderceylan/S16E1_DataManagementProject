@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9C320B17-BD01-F017-1A52-EB15D5890BE5" name="Project ">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:26:40 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="project-no" id="3E25B9CC-0889-23C2-4332-9B5A70152827">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:26:57 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project-title" id="0C7D28D2-7255-7788-9353-6B8A749EFD73">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:27:18 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee-id" id="CA94F741-6F2C-E628-3BE6-1D85D4128B27">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:41:29 UTC</createdTime>
+<generatorID>9167C683-E376-DB3A-C30A-94C4842773B2</generatorID>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CB34504E-DFB9-F37A-CB4C-F0211BD5356D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept-no" id="F197AF88-1BF3-119D-36AC-71DFD5BE9996">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:55:28 UTC</createdTime>
+<generatorID>30200FF6-E4B6-FB40-D401-ADD93D3CEABC</generatorID>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>234100EA-55C9-AE2B-DB58-5AD2C91DD5EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="master-project-no" id="83FF68D9-B8B2-8C42-3CFA-0DA8447975CB">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:58:50 UTC</createdTime>
+<generatorID>C9CEF42E-A6FF-6584-F4F6-40493A9D71BF</generatorID>
+<ownerDesignName>conceptual </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3E25B9CC-0889-23C2-4332-9B5A70152827</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A2237E7B-3E77-E0D9-21B0-E5001298F955" name="Project PK">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:27:14 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3E25B9CC-0889-23C2-4332-9B5A70152827</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

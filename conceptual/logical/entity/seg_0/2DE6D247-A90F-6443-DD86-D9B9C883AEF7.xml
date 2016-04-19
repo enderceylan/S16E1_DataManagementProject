@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2DE6D247-A90F-6443-DD86-D9B9C883AEF7" name="Department">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:31:21 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dept-no" id="234100EA-55C9-AE2B-DB58-5AD2C91DD5EA">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:31:31 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept-name" id="A244E3B4-990E-5E5B-2B01-EFC5A1C5D700">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:31:44 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9DC3BA93-5566-EAC4-FA99-52D4F89A7E6D" name="Department PK">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 03:31:42 UTC</createdTime>
+<ownerDesignName>conceptual </ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>234100EA-55C9-AE2B-DB58-5AD2C91DD5EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

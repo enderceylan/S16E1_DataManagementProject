@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E559B16-CDF4-BD50-35AD-AA38ACAF5B14" name="Department">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>677AFFA0-B6E8-BE1C-9BA2-10874E420409</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dept_no" id="077BAD8B-FB91-C77E-1E9F-0EB874ADF46B">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>E7B2E576-09E8-8B23-D8D5-0EC1036DB2F1</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dept_name" id="9422A255-492D-49B1-565C-BD1F9FBDCA59">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>E39B6F7A-D026-DFDD-CFB8-7D4DC879BCB6</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D0224D0-F252-8A98-1D44-66F73C2D3788" name="Department_PK">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>D3E33281-FA91-4F93-8827-3F7D54CE29AD</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="077BAD8B-FB91-C77E-1E9F-0EB874ADF46B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

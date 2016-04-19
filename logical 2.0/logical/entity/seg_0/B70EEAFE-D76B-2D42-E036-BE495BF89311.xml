@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B70EEAFE-D76B-2D42-E036-BE495BF89311" name="Person">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="person_id" id="2D4A5BE6-21F5-03AD-0517-10699891AC8E">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>46198FC2-DDF5-1251-0EF1-E3DB531391D9</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="1027446A-E8A2-C605-3B50-87D1C6ABB868">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>972ED54E-4D0F-654E-F5F0-2E4B723523B1</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254</dataTypeSize>
+<ownDataTypeParameters>254,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="2A7B630A-511C-393C-D373-3A17DBF805A4">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>DFF9F903-18FF-21E1-9CD3-A31FE6D19264</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254</dataTypeSize>
+<ownDataTypeParameters>254,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="home_address" id="704CDDB6-235D-3BB4-19AD-5C4DC62A4FB2">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>634671E3-85FA-C9CE-9C59-147AD586D7C1</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254</dataTypeSize>
+<ownDataTypeParameters>254,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zipcode" id="F39D12E6-A8E8-F3C8-9E09-309C4E985F20">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>B66DE1E2-510E-9F57-F2AC-1E8091C58470</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="home_phone" id="D58AF99B-BFDF-EA8E-BC59-896F8F5C6601">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>E58AD826-BFEF-B6CA-F899-92CC38CD0890</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="us_citizen" id="558EC6EC-6140-B30E-C6CC-90BE1CD9C91E">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<importedID>08EE37F4-E7DC-212E-0912-9D3BD5DBDCFE</importedID>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="spouse_id" id="8952BABD-DB74-0399-FB06-3915CF173256">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:19:00 UTC</createdTime>
+<generatorID>DD2B6202-DFF3-222A-AECC-572C59D65C61</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D4A5BE6-21F5-03AD-0517-10699891AC8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="20448CE4-5DDE-0A55-D397-0EBCDB668DB6">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:19:41 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="324C0A4E-AB74-A55B-24C9-C1947A776AC2">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:19:53 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary_exception" id="8BA49B9D-2770-8B2D-C6DD-5BAF920CEC87">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:20:06 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="isFired" id="D14BD859-B27F-DE2E-97CF-A953D7849F14">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:22:06 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept_no" id="196E465D-D97B-1A07-54CF-0CA7745EF89B">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:23:34 UTC</createdTime>
+<generatorID>894016BA-8869-9436-9D20-7A81844C513E</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E7B2E576-09E8-8B23-D8D5-0EC1036DB2F1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manager_id" id="1F37336A-E777-D8CB-AA5F-3420EFF0E036">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:52:41 UTC</createdTime>
+<generatorID>0ADDC465-E4EB-2A68-A468-DCC889931424</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D4A5BE6-21F5-03AD-0517-10699891AC8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7ABDFC98-33E5-CCD2-99B2-5E141297D40C" name="Person PK">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:17:23 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2D4A5BE6-21F5-03AD-0517-10699891AC8E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,560 @@
+drop view person_view ;
+drop view employee_view ;
+drop view project_employee_view ;
+drop view manager_view ;
+drop view interim_manager_view;
+drop view president_view;
+drop view previous_employee_view;
+drop view project_view
+drop view current_project_view;
+drop view previous_project_view;
+
+create view person_view as
+SELECT 
+    person_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    type
+FROM person where type = 'Person';
+
+create or replace TRIGGER person_trigger
+     INSTEAD OF insert ON person_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+		'Person') ;
+END;
+/
+
+create view employee_view as
+SELECT 
+    person_id,
+    employee_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    salary,
+    salary_exception,
+    employee_manager,
+    type
+FROM person where type = 'Employee';
+
+create or replace TRIGGER employee_trigger
+     INSTEAD OF insert ON employee_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	employee_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	salary,
+    	salary_exception,
+    	employee_manager,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.employee_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+    	:NEW.salary,
+    	:NEW.salary_exception,
+    	:NEW.employee_manager,
+    	'Employee') ;
+END;
+/
+
+create view project_employee_view as
+SELECT 
+    person_id,
+    employee_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    salary,
+    salary_exception,
+    employee_manager,
+    current_projects,
+    type
+FROM person where type = 'Project Employee';
+
+create or replace TRIGGER project_employee_trigger
+     INSTEAD OF insert ON project_employee_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	employee_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	salary,
+    	salary_exception,
+    	employee_manager,
+    	current_projects,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.employee_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+    	:NEW.salary,
+    	:NEW.salary_exception,
+    	:NEW.employee_manager,
+    	:NEW.current_projects,
+    	'Project Employee') ;
+END;
+/
+
+create view manager_view as
+SELECT 
+    person_id,
+    employee_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    salary,
+    salary_exception,
+    employee_manager,
+    bonus,
+    employees_managing,
+    projects_managing,
+    manager_dept,
+    type
+FROM person where type = 'Manager';
+
+create or replace TRIGGER manager_trigger
+     INSTEAD OF insert ON manager_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	employee_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	salary,
+    	salary_exception,
+    	employee_manager,
+    	bonus,
+    	employees_managing,
+    	projects_managing,
+    	manager_dept,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.employee_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+    	:NEW.salary,
+    	:NEW.salary_exception,
+    	:NEW.employee_manager,
+    	:NEW.bonus,
+    	:NEW.employees_managing,
+    	:NEW.projects_managing,
+    	:NEW.manager_dept,
+    	'Manager') ;
+END;
+/
+
+create view interim_manager_view as
+SELECT 
+    person_id,
+    employee_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    salary,
+    salary_exception,
+    employee_manager,
+    current_projects,
+    bonus,
+    employees_managing,
+    projects_managing,
+    manager_dept,
+    type
+FROM person where type = 'Interim Manager';
+
+create or replace TRIGGER interim_manager_trigger
+     INSTEAD OF insert ON interim_manager_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	employee_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	salary,
+    	salary_exception,
+    	employee_manager,
+    	current_projects,
+    	bonus,
+    	employees_managing,
+    	projects_managing,
+    	manager_dept,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.employee_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+    	:NEW.salary,
+    	:NEW.salary_exception,
+    	:NEW.employee_manager,
+    	:NEW.current_projects,
+    	:NEW.bonus,
+    	:NEW.employees_managing,
+    	:NEW.projects_managing,
+    	:NEW.manager_dept,
+    	'Interim Manager') ;
+END;
+/
+
+create view president_view as
+SELECT 
+    person_id,
+    employee_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    salary,
+    salary_exception,
+    employee_manager,
+    bonus,
+    employees_managing,
+    projects_managing,
+    manager_dept,
+    type
+FROM person where type = 'President';
+
+create or replace TRIGGER president_trigger
+     INSTEAD OF insert ON president_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	employee_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	salary,
+    	salary_exception,
+    	employee_manager,
+    	bonus,
+    	employees_managing,
+    	projects_managing,
+    	manager_dept,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.employee_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+    	:NEW.salary,
+    	:NEW.salary_exception,
+    	:NEW.employee_manager,
+    	:NEW.bonus,
+    	:NEW.employees_managing,
+    	:NEW.projects_managing,
+    	:NEW.manager_dept,
+    	'President') ;
+END;
+/
+
+create view previous_employee_view as
+SELECT 
+    person_id,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    spouse,
+    children,
+    parents,
+    is_fired,
+    salary,
+    type
+FROM person where type = 'Previous Employee';
+
+create or replace TRIGGER previous_employee_trigger
+     INSTEAD OF insert ON previous_employee_view
+     FOR EACH ROW
+BEGIN
+    insert into person( 
+		person_id,
+    	first_name,
+    	last_name,
+    	home_address,
+    	zipcode,
+    	home_phone,
+    	us_citizen,
+    	spouse,
+    	children,
+    	parents,
+    	is_fired,
+    	salary,
+    	type)
+		 VALUES ( 
+		:NEW.person_id,
+    	:NEW.first_name,
+    	:NEW.last_name,
+    	:NEW.home_address,
+    	:NEW.zipcode,
+    	:NEW.home_phone,
+    	:NEW.us_citizen,
+    	:NEW.spouse,
+    	:NEW.children,
+    	:NEW.parents,
+    	:NEW.is_fired,
+    	:NEW.salary,
+		'Previous Employee') ;
+END;
+/
+
+create view project_view as
+SELECT 
+    project_no,
+    project_title,
+    project_manager,
+    dept_assigned,
+    sub_projects,
+    sub_project_of,
+    type
+FROM person where type = 'Project';
+
+create or replace TRIGGER project_trigger
+     INSTEAD OF insert ON project_view
+     FOR EACH ROW
+BEGIN
+    insert into project( 
+		project_no,
+    	project_title,
+    	project_manager,
+    	dept_assigned,
+    	sub_projects,
+    	sub_project_of,
+    	type)
+		 VALUES ( 
+		:NEW.project_no,
+    	:NEW.project_title,
+    	:NEW.project_manager,
+    	:NEW.dept_assigned,
+    	:NEW.sub_projects,
+    	:NEW.sub_project_of,
+		'Project') ;
+END;
+/
+
+create view current_project_view as
+SELECT 
+    project_no,
+    project_title,
+    project_manager,
+    dept_assigned,
+    sub_projects,
+    sub_project_of,
+    project_active,
+    project_members,
+    type
+FROM person where type = 'Current Project';
+
+create or replace TRIGGER current_project_trigger
+     INSTEAD OF insert ON current_project_view
+     FOR EACH ROW
+BEGIN
+    insert into project( 
+		project_no,
+    	project_title,
+    	project_manager,
+    	dept_assigned,
+    	sub_projects,
+    	sub_project_of,
+    	project_active,
+    	project_members,
+    	type)
+		 VALUES ( 
+		:NEW.project_no,
+    	:NEW.project_title,
+    	:NEW.project_manager,
+    	:NEW.dept_assigned,
+    	:NEW.sub_projects,
+    	:NEW.sub_project_of,
+    	:NEW.project_active,
+    	:NEW.project_members,
+		'Current Project') ;
+END;
+/
+
+create view previous_project_view as
+SELECT 
+    project_no,
+    project_title,
+    project_manager,
+    dept_assigned,
+    sub_projects,
+    sub_project_of,
+    end_date_month,
+    end_date_day,
+    end_date_year,
+    est_person_hours,
+    type
+FROM person where type = 'Previous Project';
+
+create or replace TRIGGER previous_project_trigger
+     INSTEAD OF insert ON previous_project_view
+     FOR EACH ROW
+BEGIN
+    insert into project( 
+		project_no,
+    	project_title,
+    	project_manager,
+    	dept_assigned,
+    	sub_projects,
+    	sub_project_of,
+    	end_date_month,
+    	end_date_day,
+    	end_date_year,
+    	est_person_hours,
+    	type)
+		 VALUES ( 
+		:NEW.project_no,
+    	:NEW.project_title,
+    	:NEW.project_manager,
+    	:NEW.dept_assigned,
+    	:NEW.sub_projects,
+    	:NEW.sub_project_of,
+    	:NEW.end_date_month,
+    	:NEW.end_date_day,
+    	:NEW.end_date_year,
+    	:NEW.est_person_hours,
+		'Previous Project') ;
+END;
+/

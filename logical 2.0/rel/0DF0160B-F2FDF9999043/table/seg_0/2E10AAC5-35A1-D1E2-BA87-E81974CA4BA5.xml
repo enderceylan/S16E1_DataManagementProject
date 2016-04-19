@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E10AAC5-35A1-D1E2-BA87-E81974CA4BA5" name="Project">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>4DABB546-CE42-EF25-F115-0AB99CE22768</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_no" id="B1DBFD10-36B9-AE58-96D4-2E7ADE7DA529">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>D9659F62-6660-9302-7F9B-745B04C6235C</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project_title" id="B56A6F74-5F82-47D1-63B9-9FD077DBD54A">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>86597C25-6275-2332-AEF6-F09573644C2F</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="5B570E62-22A0-4B19-5E85-D859201D668E">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>2749855E-7DEE-F066-ED85-A4047436DA35</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date_month" id="688C864E-980A-26E3-E2C9-2E4D198277D3">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>8F7B6357-426E-A4EE-7BCB-FEE78B68264F</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date_day" id="DF4F64DD-37E3-B78E-FAF0-9B9D4F27C959">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>FF25D16B-F8FF-0FE2-818E-28D107441339</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date_year" id="8CD77E40-5D88-43E4-10E4-7464D70D929E">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>FE1C0F1D-C190-9B98-C70B-4C72ED3BE6F0</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_person_hours" id="34116FE3-A5EB-40CB-4BE7-249823AA7E98">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>863C4C47-BFFC-41F1-7C84-76005DF9AEE3</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project_active" id="56DD1AEF-F07A-4F40-1827-80EBC50BA4D9">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>1CAD6B94-1F1A-99CA-CC06-EED43C8A609D</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="master_project_id" id="D8C52731-96A0-268B-7DF7-597BAAABF685">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>E9442DBB-FC0B-DB39-7F2C-E84ACE6D7B24</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8F2979A-320B-FD54-EEDE-9B924FEE6753" referredColumn="B1DBFD10-36B9-AE58-96D4-2E7ADE7DA529"/>
+</associations>
+</Column>
+<Column name="dept_no" id="7CA74BC8-A9D1-4C7B-3112-A3657B5C8048">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>5B854D30-EDC2-698B-5657-343A94A6137A</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B075E61-DC1F-5CD6-4FC8-FB074C2F4EFA" referredColumn="077BAD8B-FB91-C77E-1E9F-0EB874ADF46B"/>
+</associations>
+</Column>
+<Column name="manager_id" id="7586C525-2E45-AE6E-9E16-06D972DDA6FD">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>25666269-B914-9B8C-3F26-26AAFBFB29E8</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0719C0F-156A-6F78-36C5-A67AF3DB9081" referredColumn="F28EAB58-C170-6102-C970-16365ACEAFC4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E545E9D5-7BB7-20E9-882A-06375966ED7E" name="Project_PK">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>EA90C15F-8EDA-246E-575A-7767DD6ADD75</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1DBFD10-36B9-AE58-96D4-2E7ADE7DA529"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F0EB4FD-BD1D-13F9-2E0B-B3B3C9C0CC86" name="Master/sub_project">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>40AB2C32-DBCF-122B-41FC-C0791FF4D560</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C52731-96A0-268B-7DF7-597BAAABF685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E14D027-E3B1-A14F-18E2-0883F1F3ECA1" name="Relation_10">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>4BA15ED4-0B0F-A910-A707-9F0F8933C322</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7586C525-2E45-AE6E-9E16-06D972DDA6FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A44C6774-573E-028B-5C90-8CDE66F7B315" name="dept/proj">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 05:48:23 UTC</createdTime>
+<generatorID>0AD1147A-DE4F-3F16-DF24-C5AD0E0CA02F</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CA74BC8-A9D1-4C7B-3112-A3657B5C8048"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

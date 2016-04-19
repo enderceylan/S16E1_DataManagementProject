@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30909A1A-91E1-76A5-B8AF-13D9E9C91538" name="Projects_employees">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:31:11 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="project_no" id="8850EFB3-206E-F283-B9A9-53EE14A6CE6B">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:32:06 UTC</createdTime>
+<generatorID>D6C46D3F-CBE8-8CDA-1D34-A78F16819043</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D9659F62-6660-9302-7F9B-745B04C6235C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id" id="46845D4F-3BCE-12DD-95AA-E72578776A88">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:32:36 UTC</createdTime>
+<generatorID>EE56DE6E-0373-42F2-7984-235D8ADF5409</generatorID>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D4A5BE6-21F5-03AD-0517-10699891AC8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

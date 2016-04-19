@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dept/mang" directorySegmentName="seg_0" id="894016BA-8869-9436-9D20-7A81844C513E">
+<createdBy>Addison</createdBy>
+<createdTime>2016-03-30 04:23:34 UTC</createdTime>
+<ownerDesignName>logical 2.0</ownerDesignName>
+<engineerTo>
+<item key="0DF0160B-6EC0-D83E-97E0-F2FDF9999043" value="true"/>
+</engineerTo>
+<sourcePk>D3E33281-FA91-4F93-8827-3F7D54CE29AD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>677AFFA0-B6E8-BE1C-9BA2-10874E420409</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B70EEAFE-D76B-2D42-E036-BE495BF89311</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
