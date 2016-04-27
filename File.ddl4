@@ -21,7 +21,7 @@ SELECT
     spouse,
     children,
     parents,
-    type
+    job_type
 FROM person where type = 'Person';
 
 create or replace TRIGGER person_trigger
@@ -39,7 +39,7 @@ BEGIN
     	spouse,
     	children,
     	parents,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.first_name,
@@ -71,7 +71,7 @@ SELECT
     salary,
     salary_exception,
     employee_manager,
-    type
+    job_type
 FROM person where type = 'Employee';
 
 create or replace TRIGGER employee_trigger
@@ -93,7 +93,7 @@ BEGIN
     	salary,
     	salary_exception,
     	employee_manager,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.employee_id,
@@ -130,7 +130,7 @@ SELECT
     salary_exception,
     employee_manager,
     current_projects,
-    type
+    job_type
 FROM person where type = 'Project Employee';
 
 create or replace TRIGGER project_employee_trigger
@@ -153,7 +153,7 @@ BEGIN
     	salary_exception,
     	employee_manager,
     	current_projects,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.employee_id,
@@ -194,7 +194,7 @@ SELECT
     employees_managing,
     projects_managing,
     manager_dept,
-    type
+    job_type
 FROM person where type = 'Manager';
 
 create or replace TRIGGER manager_trigger
@@ -220,7 +220,7 @@ BEGIN
     	employees_managing,
     	projects_managing,
     	manager_dept,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.employee_id,
@@ -265,7 +265,7 @@ SELECT
     employees_managing,
     projects_managing,
     manager_dept,
-    type
+    job_type
 FROM person where type = 'Interim Manager';
 
 create or replace TRIGGER interim_manager_trigger
@@ -292,7 +292,7 @@ BEGIN
     	employees_managing,
     	projects_managing,
     	manager_dept,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.employee_id,
@@ -337,7 +337,7 @@ SELECT
     employees_managing,
     projects_managing,
     manager_dept,
-    type
+    job_type
 FROM person where type = 'President';
 
 create or replace TRIGGER president_trigger
@@ -363,7 +363,7 @@ BEGIN
     	employees_managing,
     	projects_managing,
     	manager_dept,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.employee_id,
@@ -401,7 +401,7 @@ SELECT
     parents,
     is_fired,
     salary,
-    type
+    job_type
 FROM person where type = 'Previous Employee';
 
 create or replace TRIGGER previous_employee_trigger
@@ -421,7 +421,7 @@ BEGIN
     	parents,
     	is_fired,
     	salary,
-    	type)
+    	job_type)
 		 VALUES ( 
 		:NEW.person_id,
     	:NEW.first_name,
@@ -447,7 +447,7 @@ SELECT
     dept_assigned,
     sub_projects,
     sub_project_of,
-    type
+    project_type
 FROM person where type = 'Project';
 
 create or replace TRIGGER project_trigger
@@ -461,7 +461,7 @@ BEGIN
     	dept_assigned,
     	sub_projects,
     	sub_project_of,
-    	type)
+    	project_type)
 		 VALUES ( 
 		:NEW.project_no,
     	:NEW.project_title,
@@ -483,7 +483,7 @@ SELECT
     sub_project_of,
     project_active,
     project_members,
-    type
+    project_type
 FROM person where type = 'Current Project';
 
 create or replace TRIGGER current_project_trigger
@@ -499,7 +499,7 @@ BEGIN
     	sub_project_of,
     	project_active,
     	project_members,
-    	type)
+    	project_type)
 		 VALUES ( 
 		:NEW.project_no,
     	:NEW.project_title,
@@ -525,7 +525,7 @@ SELECT
     end_date_day,
     end_date_year,
     est_person_hours,
-    type
+    project_type
 FROM person where type = 'Previous Project';
 
 create or replace TRIGGER previous_project_trigger
@@ -543,7 +543,7 @@ BEGIN
     	end_date_day,
     	end_date_year,
     	est_person_hours,
-    	type)
+    	project_type)
 		 VALUES ( 
 		:NEW.project_no,
     	:NEW.project_title,
