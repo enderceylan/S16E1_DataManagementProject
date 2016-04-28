@@ -1,6 +1,6 @@
 # This example was cleaned up and made to work by Eliot Lyon in October, 2015
 
-connOracleNoSQL = connectTo 'OracleNoSQL' 'WDBE1' 'localhost:7050' 'native_mode' 'A0' nodebug
+connOracleNoSQL = connectTo 'OracleNoSQL' 'WDBE1' 'localhost:7051' 'native_mode' 'A0' nodebug
 
 SIM on connOracleNoSQL "CLEAR DATABASE"
 
