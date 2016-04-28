@@ -21,14 +21,14 @@ alter trigger previous_project_trigger disable;
 -- DISABLE ALL FOREIGN KEYS
 alter table person disable constraint "department_dept_no_FK_0";
 alter table person disable constraint "person_person_id_FK_1";
-alter table person disable constraint "person_person_id1_FK_2";
+--alter table person disable constraint "person_person_id1_FK_2";
 alter table project disable constraint "department_dept_no_FK_3";
-alter table project disable constraint "person_person_id_FK_4";
+--alter table project disable constraint "person_person_id_FK_4";
 alter table project disable constraint "project_project_no_FK_5";
-alter table projects_employees disable constraint "Person_person_id_FK_6";
+--alter table projects_employees disable constraint "Person_person_id_FK_6";
 alter table projects_employees disable constraint "Project_project_no_FK_7";
 alter table parent_child disable constraint "person_person_id_FK_8";
-alter table parent_child disable constraint "person_person_id1_FK_9";
+--alter table parent_child disable constraint "person_person_id1_FK_9";
 
 -- INSERT STATEMENTS
 insert into department values(1, 'Research');
@@ -76,11 +76,11 @@ alter trigger previous_project_trigger enable;
 
 alter table department enable constraint "department_dept_no_FK_0";
 alter table person enable constraint "person_person_id_FK_1";
-alter table person enable constraint "person_person_id1_FK_2";
+--alter table person enable constraint "person_person_id1_FK_2";
 alter table project enable constraint "department_dept_no_FK_3";
-alter table project enable constraint "person_person_id_FK_4";
+--alter table project enable constraint "person_person_id_FK_4";
 alter table project enable constraint "project_project_no_FK_5";
-alter table projects_employees enable constraint "Person_person_id_FK_6";
+--alter table projects_employees enable constraint "Person_person_id_FK_6";
 alter table projects_employees enable constraint "Project_project_no_FK_7";
 alter table parent_child enable constraint "person_person_id_FK_8";
-alter table parent_child enable constraint "person_person_id1_FK_9";
+--alter table parent_child enable constraint "person_person_id1_FK_9";
