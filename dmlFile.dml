@@ -1,0 +1,86 @@
+truncate table projects_employees;
+truncate table project;
+truncate table person; 
+truncate table parent_child; -- relationship table
+truncate table department;
+
+alter trigger department_pk_trig disable;
+alter trigger person_pk_trig disable;
+alter trigger project_pk_trig disable;
+alter trigger person_trigger disable;
+alter trigger employee_trigger disable;
+alter trigger project_employee_trigger disable;
+alter trigger manager_trigger disable;
+alter trigger interim_manager_trigger disable;
+alter trigger president_trigger disable;
+alter trigger previous_employee_trigger disable;
+alter trigger project_trigger disable;
+alter trigger current_project_trigger disable;
+alter trigger previous_project_trigger disable;
+
+-- DISABLE ALL FOREIGN KEYS
+alter table person disable constraint "department_dept_no_FK_0";
+alter table person disable constraint "person_person_id_FK_1";
+alter table person disable constraint "person_person_id1_FK_2";
+alter table project disable constraint "department_dept_no_FK_3";
+alter table project disable constraint "person_person_id_FK_4";
+alter table project disable constraint "project_project_no_FK_5";
+alter table projects_employees disable constraint "Person_person_id_FK_6";
+alter table projects_employees disable constraint "Project_project_no_FK_7";
+alter table parent_child disable constraint "person_person_id_FK_8";
+alter table parent_child disable constraint "person_person_id1_FK_9";
+
+-- INSERT STATEMENTS
+insert into department values(1, 'Research');
+insert into department values(2, 'Marketing');
+insert into department values(3, 'Headquarters');
+insert into department values(4, 'Out of this World');
+
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(1, 'Tony', 'Stark', '100 Avengers Tower Way', 10001, 2120294759, 'T', 5208, 12000000, 'F', 1, 'manager', 'Pepper Potts', 'Anthony Stark Jr.', 1, 6);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(2, 'Steve', 'Rogers', '254 Hogarth Lane', 11201, 2123002984, 'T', 2211, 80000, 'F', 2, 'manager', null, null, 2, null);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(3, 'Bruce', 'Banner', 'Planet Hulk', 99999, 8007825277, 'T', 2314, 200000, 'F', 1, 'employee', null, null, 3, null);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(4, 'Nick', 'Fury', '700 Skyplane Avenue', 90909, null, 'T', 1000, 120000, 'F', 3, 'president', null, null, 4, null);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(5, 'Pepper', 'Potts', '100 Avengers Tower Way', 10001, 2120294759, 'T', null, null, 'F', null, 'person', 'Tony Stark', 'Anthony Stark Jr.', 5, 6);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(6, 'Anthony', 'Stark', '100 Avengers Tower Way', 10001, 2120294759, 'T', null, null, 'F', null, 'person', null, null, 6, null);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(7, 'Natasha', 'Romanoff', '1200 Grumpkin Avenue', 23948, 2126354558, 'T', 2323, 200000, 'F', 3, 'interim manager', null, null, 7, null);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(8, 'Thor', 'Of Asgard', '1 Asgard', null, null, 'F', 5555, 121121, 'F', 4, 'project employee', null, null, 8, null);
+insert into person (person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, employee_id, salary, isfired, department_dept_no, job_type, spouse, child, person_person_id, person_person_id1)
+	values(9, 'Ultron', 'Robot', 'Everywhere', null, null, 'F', null, null, 'T', null, 'previous employee', null, null, 9, null);
+
+insert into project(project_no, project_title, employee_id, project_active, department_dept_no, project_type, project_project_no, person_person_id)
+	values(1, 'Algorithms', 5555, 'T', 4, 'current project', 1, 8);
+insert into project(project_no, project_title, employee_id, project_active, department_dept_no, project_type, project_project_no, person_person_id)
+	values(2, 'Save the Planet', 5555, 'F', 4, 'previous project', 2, 8);
+
+alter trigger department_pk_trig enable;
+alter trigger person_pk_trig enable;
+alter trigger project_pk_trig enable;
+alter trigger person_trigger enable;
+alter trigger employee_trigger enable;
+alter trigger project_employee_trigger enable;
+alter trigger manager_trigger enable;
+alter trigger interim_manager_trigger enable;
+alter trigger president_trigger enable;
+alter trigger previous_employee_trigger enable;
+alter trigger project_trigger enable;
+alter trigger current_project_trigger enable;
+alter trigger previous_project_trigger enable;
+
+alter table department enable constraint "department_dept_no_FK_0";
+alter table person enable constraint "person_person_id_FK_1";
+alter table person enable constraint "person_person_id1_FK_2";
+alter table project enable constraint "department_dept_no_FK_3";
+alter table project enable constraint "person_person_id_FK_4";
+alter table project enable constraint "project_project_no_FK_5";
+alter table projects_employees enable constraint "Person_person_id_FK_6";
+alter table projects_employees enable constraint "Project_project_no_FK_7";
+alter table parent_child enable constraint "person_person_id_FK_8";
+alter table parent_child enable constraint "person_person_id1_FK_9";
